@@ -191,6 +191,9 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         int itemQuantityInt = Integer.parseInt(itemQuantityString);
         values.put(InventoryContract.InventoryEntry.COLUMN_ITEM_QUANTITY, itemQuantityInt);
 
+        int total= Integer.parseInt(itemQuantityString);
+        values.put(InventoryContract.InventoryEntry.COLUMN_TOTAL,total);
+
         values.put(InventoryContract.InventoryEntry.COLUMN_SUPPLIER_NAME, supplierNameString);
         values.put(InventoryContract.InventoryEntry.COLUMN_SUPPLIER_PHONE, supplierPhoneString);
         values.put(InventoryContract.InventoryEntry.COLUMN_SUPPLIER_EMAIL, supplierEmailString);
@@ -240,6 +243,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 InventoryContract.InventoryEntry.COLUMN_ITEM_NAME,
                 InventoryContract.InventoryEntry.COLUMN_ITEM_PRICE,
                 InventoryContract.InventoryEntry.COLUMN_ITEM_QUANTITY,
+                InventoryContract.InventoryEntry.COLUMN_TOTAL,
                 InventoryContract.InventoryEntry.COLUMN_SUPPLIER_NAME,
                 InventoryContract.InventoryEntry.COLUMN_SUPPLIER_PHONE,
                 InventoryContract.InventoryEntry.COLUMN_SUPPLIER_EMAIL,

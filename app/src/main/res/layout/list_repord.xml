@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/drug_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report for Panado "
+                android:textSize="12pt"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/sold_drug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 274 Panado were sold"
+                android:textSize="4pt"
+                android:textColor="@color/colorAccent"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/avail_drug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200 Panado are available"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="4pt" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tolal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL AMOUNT M 299"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/report_image"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:paddingRight="8dp"
+        android:src="@drawable/ic_baseline_add_card_24" />
+
+</LinearLayout>

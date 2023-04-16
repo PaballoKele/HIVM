@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 InventoryContract.InventoryEntry.COLUMN_ITEM_IMAGE,
                 InventoryContract.InventoryEntry.COLUMN_ITEM_NAME,
                 InventoryContract.InventoryEntry.COLUMN_ITEM_PRICE,
+                InventoryContract.InventoryEntry.COLUMN_TOTAL,
                 InventoryContract.InventoryEntry.COLUMN_ITEM_QUANTITY};
 
         // This loader will execute the ContentProvider's query method on a background thread
@@ -67,6 +68,15 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EditorActivity.class);
+                startActivity(intent);
+            }
+        });
+        //setup FAB to open EditorActivity
+        FloatingActionButton report = (FloatingActionButton)findViewById(R.id.reports);
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Report.class);
                 startActivity(intent);
             }
         });

@@ -28,7 +28,47 @@
             android:layout_below="@id/empty_cart"
             android:text="Add some Items by clicking on +" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="252dp"
+            android:layout_marginTop="30pt"
+            android:layout_marginHorizontal="40pt"
+            app:srcCompat="@drawable/top" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/report" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="130pt"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/report" />
+
+        <TextView
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40pt"
+            android:text="Welcomed to PCH"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="14pt"
+            android:textStyle="bold" />
     </RelativeLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/reports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8pt"
+            android:layout_marginTop="285pt"
+            android:src="@drawable/fook" />
+
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
