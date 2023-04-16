@@ -17,17 +17,28 @@
                 android:id="@+id/activity_editor"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/had">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/spiral" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15pt"
+                    android:text="Add Drugs"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="20pt"
+                    android:layout_marginHorizontal="10pt"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20pt">
 
                     <TextView
                         android:layout_width="0dp"
@@ -35,6 +46,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="8dp"
                         android:text="Item Name"
+                        android:textSize="8pt"
                         android:textColor="@color/colorAccent" />
 
                     <EditText
@@ -56,6 +68,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="8dp"
                         android:text="Item Price ($)"
+                        android:textSize="8pt"
                         android:textColor="@color/colorAccent" />
 
                     <EditText
@@ -79,6 +92,7 @@
                         android:gravity="center_vertical"
                         android:paddingLeft="8dp"
                         android:text="Item Quantity"
+                        android:textSize="8pt"
                         android:textColor="@color/colorAccent" />
 
                     <LinearLayout
@@ -90,7 +104,8 @@
                             android:id="@+id/plus"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:text="+" />
+                            android:text="+"
+                            android:background="@color/colorAccent"/>
 
                         <EditText
                             android:id="@+id/item_quantity"
@@ -104,7 +119,8 @@
                             android:id="@+id/minus"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:text="-" />
+                            android:text="-"
+                            android:background="@color/colorAccent"/>
 
                     </LinearLayout>
 
@@ -120,6 +136,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="8dp"
                         android:text="Supplier Name"
+                        android:textSize="8pt"
                         android:textColor="@color/colorAccent" />
 
                     <EditText
@@ -141,6 +158,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="8dp"
                         android:text="Supplier Phone"
+                        android:textSize="7pt"
                         android:textColor="@color/colorAccent" />
 
                     <EditText
@@ -163,6 +181,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="8dp"
                         android:text="Supplier e-mail"
+                        android:textSize="8pt"
                         android:textColor="@color/colorAccent" />
 
                     <EditText
@@ -185,6 +204,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="8dp"
                         android:text="Image"
+                        android:textSize="8pt"
                         android:textColor="@color/colorAccent" />
 
                     <Button
@@ -192,7 +212,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
-                        android:text="Click to Add Image" />
+                        android:text="Click to Add Image"
+                        android:background="@color/design_default_color_secondary_variant"/>
 
                 </LinearLayout>
 

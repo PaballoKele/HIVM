@@ -11,7 +11,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.util.Log;
 
-public class InventoryProvider extends ContentProvider  {
+public class
+InventoryProvider extends ContentProvider  {
 
     private InventoryDbHelper mDbHelper;
 
