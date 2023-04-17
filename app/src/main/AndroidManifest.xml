@@ -7,11 +7,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/top"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+<<<<<<<<< Temporary merge branch 1
+=========
             android:name=".Registration"
             android:exported="false">
             <meta-data
@@ -26,6 +28,7 @@
                 android:value="" />
         </activity>
         <activity
+>>>>>>>>> Temporary merge branch 2
             android:name=".Report"
             android:exported="false">
             <meta-data
@@ -33,7 +36,11 @@
                 android:value="" />
         </activity>
         <activity
+<<<<<<<<< Temporary merge branch 1
+            android:name=".MainActivity"
+=========
             android:name=".Login"
+>>>>>>>>> Temporary merge branch 2
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,13 +48,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".EditorActivity"
-            android:windowSoftInputMode="stateHidden"
-            android:exported="true">
+        <activity
+            android:name=".EditorActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.hivm.MainActivity" />
@@ -57,7 +65,6 @@
             android:name=".InventoryProvider"
             android:authorities="com.example.android.inventory_mgt"
             android:exported="false" />
-
     </application>
 
 </manifest>
